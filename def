@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Set the PYBIN variable to the path of your python binary
+# which references the required BeautifulSoup and Requests modules
+PYBIN=/usr/bin/python
+
+pushd `dirname $0` > /dev/null
+# This assumes the "def" wrapper script and the google_define.py
+# live in the same dir. Feel free to modify it to your liking
+GOOGLE_DEFINE_PATH=`pwd -P`
+popd > /dev/null
+
+$PYBIN $GOOGLE_DEFINE_PATH/google_define.py $@

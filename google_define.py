@@ -1,8 +1,6 @@
-#!/usr/bin/env python
-
 import urllib, urllib2
-import requests
 import argparse
+import requests
 from bs4 import BeautifulSoup
 
 def get_soup(searchword):
@@ -76,6 +74,7 @@ def main():
         if hasattr(defi, "antolist"):
             print "\n" + bcolors.HEADER + "antonyms:" + bcolors.ENDC
             print bcolors.OKGREEN + " " + ", ".join(defi.antolist) + bcolors.ENDC
+        print 
 
 
 if __name__ == "__main__":
