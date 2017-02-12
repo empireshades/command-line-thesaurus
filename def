@@ -2,7 +2,7 @@
 
 # Set the PYBIN variable to the path of your python binary
 # which references the required BeautifulSoup and Requests modules
-PYBIN=/usr/bin/python
+PYBIN=$(which python)
 
 pushd `dirname $0` > /dev/null
 # This assumes the "def" wrapper script and the google_define.py

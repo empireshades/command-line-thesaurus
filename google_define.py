@@ -8,7 +8,7 @@ def get_soup(searchword):
     params = { 'q' : 'define:%s' % searchword }
     headers = { 'User-Agent' : 'Firefox 18.3' }
     req = requests.get(base, params=params, headers=headers)
-    soup = BeautifulSoup(req.text)
+    soup = BeautifulSoup(req.text, "html5lib")
     return soup
 
 class definition():
