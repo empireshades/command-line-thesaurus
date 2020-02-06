@@ -14,7 +14,7 @@ I love the simplicity of being able to look up words using google's "define {wor
 ```
 # clone the repo
 cd ~/repos
-git clone https://github.com/jyoo/google_define
+git clone https://github.com/empireshades/google_define
 
 # optionally add to PATH variable
 export PATH=$PATH:$HOME/repos/google_define
@@ -40,7 +40,7 @@ $
 ```
 
 ## TODO
-* Default to google suggestion if search word is mis-spelled
+* Fix synonyms and antonyms
 * Better error handling around timeouts
 * Create an output function to cut down on redundancy
 
