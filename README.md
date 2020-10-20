@@ -14,10 +14,10 @@ I love the simplicity of being able to look up words using google's "define {wor
 ```
 # clone the repo
 cd ~/repos
-git clone https://github.com/empireshades/google_define
+git clone https://github.com/empireshades/command-line-thesaurus
 
 # optionally add to PATH variable
-export PATH=$PATH:$HOME/repos/google_define
+export PATH=$PATH:$HOME/repos/command-line-thesaurus
 
 # optionally modify the PYBIN variable in the def wrapper script
 PYBIN=/usr/bin/python
